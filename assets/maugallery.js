@@ -64,6 +64,7 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
@@ -157,6 +158,7 @@
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
+
     },
     nextImage() {
       let activeImage = null;
