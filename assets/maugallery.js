@@ -241,7 +241,7 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active-tag");
+      $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
